@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Eddy Haziel</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <!-- Logo e Información -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/img/logo.jpg" alt="Foto Eddy">
+        <div>
+          <span>Eddy Haziel</span>
+          <small>Programador FullStack</small>
+        </div>
+      </a>
+
+      <!-- Botón Hamburguesa -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menú en pantallas grandes -->
+      <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Apps</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Juegos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Edits</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Línea divisora -->
+  <div class="divider"></div>
+
+  <!-- Menú Offcanvas (para móviles) -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
+    <div class="offcanvas-header">
+      <h5 class="text-white">Menú</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <a href="#"><i class="fas fa-home"></i> Inicio</a>
+      <a href="#"><i class="fas fa-mobile-alt"></i> Apps</a>
+      <a href="#"><i class="fas fa-gamepad"></i> Juegos</a>
+      <a href="#"><i class="fas fa-edit"></i> Edits</a>
+      <a href="#"><i class="fas fa-envelope"></i> Contacto</a>
+    </div>
+  </div>
+
+  <!-- Sección Negra -->
+  <section class="hero-section d-flex align-items-center">
+    <div class="container hero-container">
+      <!-- Columna Izquierda -->
+      <div class="hero-left">
+        <div class="profile-card">
+          <img src="assets/img/logo.jpg" alt="Foto Eddy" class="profile-img">
+          <h2>Eddy Haziel</h2>
+          <div class="blue-line"></div>
+          <p class="role">Programador FullStack</p>
+        </div>
+        <div class="social-container">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Columna Derecha -->
+      <div class="hero-right">
+        <h1>Hola</h1>
+        <h4>Esto es lo que soy y lo que hago</h4>
+        <div class="buttons">
+          <a href="#" class="btn btn-primary btn-rounded">CURRICULUM</a>
+          <a href="#" class="btn btn-outline-light btn-rounded">PROYECTOS</a>
+        </div>
+        <div class="description">
+          <p>Párrafo. Aquí puedes contar tu historia y permitir que tus usuarios sepan más sobre ti. Haz clic aquí para agregar tu propio texto y editarlo.</p>
+          <p>Aquí puedes contar tu historia y permitir que tus usuarios sepan más sobre ti.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Script Personalizado -->
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>
