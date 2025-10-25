@@ -1,27 +1,20 @@
-name: Deploy static HTML to GitHub Pages
+name: Deploy GitHub Pages
 
 on:
   push:
     branches:
       - main
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Upload static site files
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./
+      - name: Copy files to Pages folder
+        run: |
+          mkdir -p ./public
+          cp -r * ./public
 
-      - name: Deploy to GitHub Pages 🚀
-        id: deployment
+      - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
