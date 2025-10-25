@@ -11,10 +11,5 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Copy files to Pages folder
-        run: |
-          mkdir -p ./public
-          cp -r * ./public
-
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
